@@ -1,6 +1,26 @@
 package Day3Question.AnnualSalary;
 
-public class Main {
+class Employee extends User{
+    double salary;
+
+    public Employee(int id, String name, double salary) {
+        super(id, name);
+        this.salary = salary;
+    }
+
+    public double calculateAnnualSalary() {
+        return salary * 12;
+    }
+}
+class User {
+    int id;
+    String name;
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+public class EmployeeMain {
     public static void main(String[] args) {
 
         Employee emp = new Employee(101, "John Doe", 5000.0);
