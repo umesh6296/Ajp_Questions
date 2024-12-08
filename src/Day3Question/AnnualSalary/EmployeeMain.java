@@ -1,5 +1,13 @@
 package Day3Question.AnnualSalary;
 
+class User {
+    int id;
+    String name;
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+}
 class Employee extends User{
     double salary;
 
@@ -12,14 +20,7 @@ class Employee extends User{
         return salary * 12;
     }
 }
-class User {
-    int id;
-    String name;
-    public User(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-}
+
 public class EmployeeMain {
     public static void main(String[] args) {
 
