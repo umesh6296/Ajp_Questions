@@ -1,33 +1,30 @@
 package Day3Question;
 
+import java.util.Scanner;
+
 public class StrongNumber {
     // Method to calculate factorial of a digit
-    public static int factorial(int n) {
-        int fact = 1;
-        for (int i = 1; i <= n; i++) {
-            fact *= i;
-        }
-        return fact;
-    }
-    // Method to check if a number is a Strong number
-    public static boolean isStrongNumber(int number) {
-        int originalNumber = number;
-        int sumOfFactorials = 0;
-
-        while (number > 0) {
-            int digit = number % 10;
-            sumOfFactorials += factorial(digit);
-            number /= 10;
-        }
-
-        return sumOfFactorials == originalNumber;
-    }
     public static void main(String[] args) {
-        int number = 145; // Example number
-        if (isStrongNumber(number)) {
-            System.out.println(number + " is a Strong number.");
-        } else {
-            System.out.println(number + " is not a Strong number.");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        String orignalNumber=sc.next();
+
+        int sumOfnumber=0;
+        for(int i=0;i<orignalNumber.length();i++){
+            int fact=1;
+            int n=Integer.parseInt(String.valueOf(orignalNumber.charAt(i)));
+            for(int j=1;j<=n;j++){
+                fact*=j;
+            }
+            sumOfnumber+=fact;
         }
+        int orNumberInt=Integer.parseInt(orignalNumber);
+        if(orNumberInt==sumOfnumber){
+            System.out.println(orNumberInt+" is a strong number");
+        }
+        else{
+            System.out.println(orNumberInt+" is not strong number");
+        }
+
     }
 }
