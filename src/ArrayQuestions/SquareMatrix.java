@@ -9,8 +9,8 @@ public class SquareMatrix {
         int[][] matrix = new int[n][n];
 
         // Input the matrix
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+        for (int i = 0; i < n; i++) {   //Row
+            for (int j = 0; j < n; j++) { //Column
                 matrix[i][j] = sc.nextInt();
             }
         }
