@@ -3,11 +3,11 @@ package ArrayQuestions;
 public class Traverse2dArray {
     public static void main(String[] args) {
        // colum_wise();
-       // n_Traversal();
+        n_Traversal();
        // n_traversal_Reverse();
        // diamondTraversal();
        // spiral_traversal();
-        circular_traversal();
+       // circular_traversal();
     }
     public static void colum_wise(){
         int [][] arr={{1,2,3},{4,5,6},{7,8,9}};
