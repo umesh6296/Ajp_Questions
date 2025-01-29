@@ -1,11 +1,13 @@
 package Day7Questions;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
+
 //.Write a Java program to append the specified element to the end of a HashSet.
 public class AppendToHashSet {
     public static void main(String[] args) {
         // Create a HashSet
-        HashSet<String> set = new HashSet<>();
+        LinkedHashSet<String> set = new LinkedHashSet<>();
 
         // Add elements to the HashSet
         set.add("Apple");
