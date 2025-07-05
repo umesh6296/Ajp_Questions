@@ -2,7 +2,7 @@ package AdvanceLevelQuestions;
 
 import java.util.Stack;
 
-public class BalanceParanthesis {
+public class BalanceParenthesis {
     public static void main(String[] args) {
         String s = "){}[(]";
         boolean isBal = isBalanced(s);
